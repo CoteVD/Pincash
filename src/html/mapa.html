@@ -40,6 +40,9 @@
         <div class="row ">
             <div class="col-md-6 col-sm-12 col-12">
                 <div id="mapa" style=" height:71vh; background:grey"></div>
+                <div class="mx-auto">
+                    <button id="mapabtn" class="btn">Volver al mapa</button>
+                </div>
             </div>
             <div class="col-md-6 col-sm-12 col-12">
                 <div id="panel" style="height:100vh; background:inherit; display: none">
@@ -100,6 +103,35 @@
             </div>
         </div>
     </div>
+    <!-- modal servipag -->
+    <div class="modal" id="myModalServipag">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Sucursal Servipag</h5>
+                    <button type="button" id="spaneServipag" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row spacio-row">
+                            <div class="col-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="col-10">
+                                <p id="direccionServipag"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnrutaServipag" class="btn btn-secondary" data-dismiss="modal">Ver trayecto</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Reclamo-->
     <div class="modal fade" id="hateModal" tabindex="-1" role="dialog" aria-labelledby="hateModalLabel" aria-hidden="true">
@@ -130,19 +162,28 @@
                         </div>
                         <div class="row text-center">
                             <div class="col p-0">
-                                <video id="video"></video>
+                                <video width="270" id="video" ></video>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 offset-5">
-                                <a id="startbutton"><i class="fas fa-camera"></i></a>
+                            <div class="col-12 offset-1">
+                                <div class="mx-auto">
+                                    <a id="startbutton"><i class="fas fa-camera fa-2x"></i></a>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="row text-center">
                             <div class="col-md-12 col-12 p-0">
                                 <canvas id="canvas"></canvas>
                             </div>
-                            <button class="button button--success btnsu" data-for="js_success-popup">Enviar</button>
+                            <div class="col-12 offset-4">
+                                    <div class="mx-auto">
+                                            <button id="btnenviar" class="button button--success " style="display: none" data-for="js_success-popup">Enviar</button>
+                                    </div>
+                                    
+                                </div>
+                            
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
