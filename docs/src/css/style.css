@@ -110,6 +110,14 @@
     color: white;
 }
 
+.intro {
+    top: calc(100% - 60%);
+}
+
+#terms {
+    display: none;
+}
+
 
 /*Página*/
 
@@ -134,6 +142,11 @@
     background-color: #A7B19F;
     position: absolute;
     bottom: 0;
+}
+
+.btn-back {
+    background-color: white;
+    color: #A7B19F;
 }
 
 .btn-footer {
@@ -186,17 +199,7 @@
     }
 }
 
-#start {
-    -webkit-animation: fadein 1s;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s;
-    /* Firefox < 16 */
-    -ms-animation: fadein 1s;
-    /* Internet Explorer */
-    animation: fadein 1s;
-}
-
-#login {
+.transition {
     -webkit-animation: fadein 1s;
     /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s;
