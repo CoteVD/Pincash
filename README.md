@@ -1,7 +1,7 @@
 # Pincash
 Te permite conocer la ubicación de los cajeros del Banco BCI y Servipags cercanos a ti; también se detalla la ruta a seguir para llegar e éste.
 
-![image](https://user-images.githubusercontent.com/37908546/47220211-7f06d500-d387-11e8-9783-e3a56450ade5.png)
+![image](https://github.com/CoteVD/Pincash/blob/b9383e980e190248de25ee1189535d97ff2b3d12/example.jpg)
 
 ## Desarrollado para 
 [Laboratoria](http://laboratoria.la)
